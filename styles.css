@@ -12,7 +12,7 @@ body {
 
 header {
     background-color: #127ab3;
-    color: #ffffff;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
@@ -48,7 +48,7 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #127ab3;
-    color: white;
+    color: #fff;
 }
 
 h2 {
