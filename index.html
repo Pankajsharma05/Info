@@ -6,157 +6,276 @@
     <meta name="description" content="Pankaj Sharma | Condensed Matter Physics | Topological Superconductivity and Quantum Materials">
     <title>Pankaj Sharma | Research Profile</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        (function () {
+            document.documentElement.classList.add('js');
+            try {
+                var saved = localStorage.getItem('theme');
+                if (saved) document.documentElement.setAttribute('data-theme', saved);
+            } catch (e) {}
+        })();
+    </script>
 </head>
 
 <body>
 
-<header>
-    <img src="profile.jpg" alt="Pankaj Sharma" style="width:200px;border: 2px solid #333;">
+<nav class="site-nav" id="siteNav">
+    <div class="nav-inner">
+        <a class="brand" href="#top">Pankaj Sharma</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#summary">Research</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+            <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+    </div>
+</nav>
+
+<div class="shell" id="top">
+
+<header class="hero">
+    <div class="hero-avatar-wrap">
+        <img src="profile.jpg" alt="Pankaj Sharma">
+    </div>
     <h1>Pankaj Sharma</h1>
-    <p>PhD Research Scholar, Condensed Matter Physics</p>
-    <p><strong>Topological superconductivity • Josephson junction • Spin-texture-driven phenomena</strong></p>
+    <p class="role">PhD Research Scholar, Condensed Matter Physics</p>
+    <div class="tag-row">
+        <span class="tag">Topological Superconductivity</span>
+        <span class="tag">Josephson Junctions</span>
+        <span class="tag">Spin Textures</span>
+    </div>
+    <div class="social-row">
+        <a class="social-btn" href="mailto:pankajsharma6810@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+        </a>
+        <a class="social-btn" href="https://github.com/Pankajsharma05" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a class="social-btn" href="tel:+918708252080" aria-label="Phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+    </div>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#summary">Research</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#publications">Publications & Preprints</a></li>
-        <li><a href="#projects">Computational Work</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<main>
 
 <!-- ===================== RESEARCH SUMMARY ===================== -->
 
 <section id="summary">
-    <h2>Research Summary</h2>
-    <p>
-        Research focuses on topological superconductivity and hybrid quantum systems where 
-        superconductivity, magnetism, and topology interplay. Work is based on 
-        Bogoliubov–de Gennes formalism and numerical simulations to investigate 
-        Majorana bound states, Josephson transport, and spin textures in quantum materials. 
-        Recent studies explore altermagnet–superconductor heterostructures and 
-        skyrmion-induced transport phenomena.
-    </p>
+    <div class="section-head"><span class="section-num">01</span><h2>Research Summary</h2></div>
+    <div class="card">
+        <p>
+            Research focuses on <strong>topological superconductivity</strong> and hybrid quantum systems where
+            superconductivity, magnetism, and topology interplay. Work is based on the
+            <strong>Bogoliubov–de Gennes formalism</strong> and numerical simulations to investigate
+            Majorana bound states, Josephson transport, and spin textures in quantum materials.
+            Recent studies explore altermagnet–superconductor heterostructures and
+            skyrmion-induced transport phenomena.
+        </p>
+    </div>
 </section>
 
 <!-- ===================== EDUCATION ===================== -->
 
 <section id="education">
-    <h2>Education</h2>
-    <ul>
-        <li><strong>PhD in Condensed Matter Physics</strong><br>
-            Indian Institute of Technology Roorkee (2022 – Present)
-        </li>
-        <li><strong>MSc in Physics</strong><br>
-            Indian Institute of Technology Gandhinagar (2020 – 2022)
-        </li>
-    </ul>
+    <div class="section-head"><span class="section-num">02</span><h2>Education</h2></div>
+    <div class="timeline">
+        <div class="timeline-item card">
+            <span class="timeline-dot"></span>
+            <div>
+                <h3>PhD in Condensed Matter Physics</h3>
+                <p>Indian Institute of Technology Roorkee &middot; 2022 – Present</p>
+            </div>
+        </div>
+        <div class="timeline-item card">
+            <span class="timeline-dot"></span>
+            <div>
+                <h3>MSc in Physics</h3>
+                <p>Indian Institute of Technology Gandhinagar &middot; 2020 – 2022</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- ===================== PUBLICATIONS ===================== -->
 
 <section id="publications">
-    <h2>Publications & Preprints</h2>
-    <ul>
+    <div class="section-head"><span class="section-num">03</span><h2>Publications & Preprints</h2></div>
+    <div class="pub-list">
 
-        <li>
-            <strong>P. Sharma</strong>, N. Mohanta,<br>
-            <em>Double-peak Majorana bound states in altermagnet--superconductor heterostructures</em>,<br>
-            <a href="https://doi.org/10.48550/arXiv.2603.25844">arXiv:2603.25844</a> (2026).
-        </li>
+        <div class="pub-item card">
+            <span class="pub-year">2026</span>
+            <div class="pub-body">
+                <p class="pub-authors"><strong>P. Sharma</strong>, N. Mohanta</p>
+                <p class="pub-title">Double-peak Majorana bound states in altermagnet&ndash;superconductor heterostructures</p>
+                <div class="pub-meta">
+                    <span>arXiv:2603.25844</span>
+                    <a class="pub-link" href="https://doi.org/10.48550/arXiv.2603.25844" target="_blank" rel="noopener">
+                        View
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-        <li>
-            <strong>D. Singh<sup>*</sup>, P. Sharma<sup>*</sup></strong>, N. Mohanta,<br>
-            <em>Diode effect in a skyrmion-coupled high-temperature Josephson junction</em>,<br>
-            Phys. Rev. B 114, 154502 (2026).<br>
-            <small>(* equal contribution)</small>
-        </li>
+        <div class="pub-item card">
+            <span class="pub-year">2026</span>
+            <div class="pub-body">
+                <p class="pub-authors"><strong>D. Singh<sup>*</sup>, P. Sharma<sup>*</sup></strong>, N. Mohanta</p>
+                <p class="pub-title">Diode effect in a skyrmion-coupled high-temperature Josephson junction</p>
+                <div class="pub-meta">
+                    <span>Phys. Rev. B 114, 154502</span>
+                    <span class="equal-contrib">* equal contribution</span>
+                </div>
+            </div>
+        </div>
 
-        <li>
-            <strong>P. Sharma</strong>, N. Mohanta,<br>
-            <em>Magnetic field-free braiding and nontrivial fusion of Majorana bound states in a high-temperature planar Josephson junction</em>,<br>
-            J. Phys.: Condens. Matter 38, 335302 (2026).
-        </li>
+        <div class="pub-item card">
+            <span class="pub-year">2026</span>
+            <div class="pub-body">
+                <p class="pub-authors"><strong>P. Sharma</strong>, N. Mohanta</p>
+                <p class="pub-title">Magnetic field-free braiding and nontrivial fusion of Majorana bound states in a high-temperature planar Josephson junction</p>
+                <div class="pub-meta">
+                    <span>J. Phys.: Condens. Matter 38, 335302</span>
+                </div>
+            </div>
+        </div>
 
-        <li>
-            <strong>P. Sharma</strong>, N. Mohanta,<br>
-            <em>Multiple Majorana bound states and their resilience against disorder in planar Josephson junctions</em>,<br>
-            Phys. Rev. B 112, 134501 (2025).
-        </li>
+        <div class="pub-item card">
+            <span class="pub-year">2025</span>
+            <div class="pub-body">
+                <p class="pub-authors"><strong>P. Sharma</strong>, N. Mohanta</p>
+                <p class="pub-title">Multiple Majorana bound states and their resilience against disorder in planar Josephson junctions</p>
+                <div class="pub-meta">
+                    <span>Phys. Rev. B 112, 134501</span>
+                </div>
+            </div>
+        </div>
 
-        <li>
-            <strong>P. Sharma</strong>, N. Mohanta,<br>
-            <em>Challenges in detecting topological superconducting transitions via supercurrent and phase probes in planar Josephson junctions</em>,<br>
-            Phys. Rev. B 109, 054515 (2024).
-        </li>
+        <div class="pub-item card">
+            <span class="pub-year">2024</span>
+            <div class="pub-body">
+                <p class="pub-authors"><strong>P. Sharma</strong>, N. Mohanta</p>
+                <p class="pub-title">Challenges in detecting topological superconducting transitions via supercurrent and phase probes in planar Josephson junctions</p>
+                <div class="pub-meta">
+                    <span>Phys. Rev. B 109, 054515</span>
+                </div>
+            </div>
+        </div>
 
-    </ul>
+    </div>
 </section>
 
 <!-- ===================== PROJECTS ===================== -->
 
 <section id="projects">
-    <h2>Computational Work</h2>
-    <ul>
+    <div class="section-head"><span class="section-num">04</span><h2>Computational Work</h2></div>
+    <div class="project-grid">
 
-        <li>
-            <strong>Bogoliubov–de Gennes Self-Consistent Solver</strong><br>
-            Real-space implementation of self-consistent BdG equations for s-wave superconductors. <br>
-            <a href="https://github.com/Pankajsharma05/BdG-self-consistent-code---s-wave-superconductor-in-real-space" target="_blank">
+        <div class="project-card card">
+            <h3>Bogoliubov–de Gennes Self-Consistent Solver</h3>
+            <p>Real-space implementation of self-consistent BdG equations for s-wave superconductors.</p>
+            <a class="project-link" href="https://github.com/Pankajsharma05/BdG-self-consistent-code---s-wave-superconductor-in-real-space" target="_blank" rel="noopener">
                 View Repository
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
             </a>
-        </li>
+        </div>
 
-        <br>
-
-        <li>
-            <strong>Monte Carlo Simulations of Classical Spin Systems</strong><br>
-            Simulations of spin textures including non-trivial magnetic configurations 
-            such as skyrmions and spin spirals using classical Monte Carlo methods.<br>
-            <a href="https://github.com/Pankajsharma05/Monte-Carlo-simulation-of-the-spin-systems" target="_blank">
+        <div class="project-card card">
+            <h3>Monte Carlo Simulations of Classical Spin Systems</h3>
+            <p>Simulations of spin textures including non-trivial magnetic configurations such as skyrmions and spin spirals using classical Monte Carlo methods.</p>
+            <a class="project-link" href="https://github.com/Pankajsharma05/Monte-Carlo-simulation-of-the-spin-systems" target="_blank" rel="noopener">
                 View Repository
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
             </a>
-        </li>
+        </div>
 
-    </ul>
+    </div>
 </section>
 
 <!-- ===================== SKILLS ===================== -->
 
 <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>Self-consistent Bogoliubov–de Gennes (BdG) calculations</li>
-        <li>Tight-binding models and numerical diagonalization</li>
-        <li>Classical Monte Carlo simulations of spin systems</li>
-        <li>Python (NumPy, SciPy), MATLAB</li>
-    </ul>
+    <div class="section-head"><span class="section-num">05</span><h2>Technical Skills</h2></div>
+    <div class="skill-chips">
+        <span class="skill-chip card">Self-consistent Bogoliubov–de Gennes (BdG) calculations</span>
+        <span class="skill-chip card">Tight-binding models & numerical diagonalization</span>
+        <span class="skill-chip card">Classical Monte Carlo simulations of spin systems</span>
+        <span class="skill-chip card">Python (NumPy, SciPy)</span>
+        <span class="skill-chip card">MATLAB</span>
+    </div>
 </section>
 
 <!-- ===================== CONTACT ===================== -->
 
 <section id="contact">
-    <h2>Contact</h2>
+    <div class="section-head"><span class="section-num">06</span><h2>Contact</h2></div>
+    <div class="contact-grid">
 
-    <p><strong>Institutional Email:</strong> 
-    <a href="mailto:pankaj@ph.iitr.ac.in">pankaj@ph.iitr.ac.in</a></p>
+        <a class="contact-item card" href="mailto:pankaj@ph.iitr.ac.in">
+            <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            </span>
+            <span>
+                <span class="label">Institutional Email</span>
+                <span class="value">pankaj@ph.iitr.ac.in</span>
+            </span>
+        </a>
 
-    <p><strong>Personal Email:</strong> 
-    <a href="mailto:pankajsharma6810@gmail.com">pankajsharma6810@gmail.com</a></p>
+        <a class="contact-item card" href="mailto:pankajsharma6810@gmail.com">
+            <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            </span>
+            <span>
+                <span class="label">Personal Email</span>
+                <span class="value">pankajsharma6810@gmail.com</span>
+            </span>
+        </a>
 
-    <p><strong>Phone:</strong> +91-870-825-2080</p>
+        <a class="contact-item card" href="tel:+918708252080">
+            <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>
+                <span class="label">Phone</span>
+                <span class="value">+91-870-825-2080</span>
+            </span>
+        </a>
 
-    <p><strong>GitHub:</strong> 
-    <a href="https://github.com/Pankajsharma05">github.com/Pankajsharma05</a></p>
+        <a class="contact-item card" href="https://github.com/Pankajsharma05" target="_blank" rel="noopener">
+            <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </span>
+            <span>
+                <span class="label">GitHub</span>
+                <span class="value">github.com/Pankajsharma05</span>
+            </span>
+        </a>
 
+    </div>
 </section>
 
+</main>
+
+</div>
+
 <footer>
-    <p>© 2026 Pankaj Sharma</p>
+    <p>&copy; 2026 Pankaj Sharma</p>
 </footer>
 
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
 </body>
 </html>
